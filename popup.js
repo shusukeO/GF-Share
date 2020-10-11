@@ -29,6 +29,6 @@ waitPageLoad((currentTab) => {
         document.getElementById('answer').select();
         document.execCommand("copy");
 
-        document.getElementById('successMessage').innerHTML = 'copied as below &#10004;'
+        document.getElementById('successMessage').innerHTML = 'copied &#10004;'
     });
 });
