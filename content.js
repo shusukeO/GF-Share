@@ -20,7 +20,7 @@ chrome.runtime.onMessage.addListener(
 
             //問題タイトル取得
             var questionTitle = questions[i].querySelector('.freebirdFormviewerComponentsQuestionBaseTitle').innerText;
-            answerSum += '\n' + questionTitle + '\n';
+            answerSum += '--------------------\n' + questionTitle + '\n';
 
             //選択式問題の複数の選択肢の取得
             var answers = questions[i].querySelectorAll('.appsMaterialWizToggleRadiogroupEl, .exportToggleEl');
