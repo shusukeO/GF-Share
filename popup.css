@@ -3,7 +3,7 @@ h2 {
     text-shadow: black 2px 2px 0;
 }
 body {
-    background: #e0e0e0;
+    background: rgb(107, 182, 253);
 }
 textarea {
     width: 300px;
