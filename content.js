@@ -89,6 +89,13 @@ chrome.runtime.onMessage.addListener(
                 continue;
             }
 
+            //時間の問題
+            var timeAnswer = questions[i].querySelectorAll(".quantumWizTextinputPaperinputInput");
+            if(timeAnswer != 0){
+                answerSum += timeAnswer[0].getAttribute('data-initial-value') + ':' + timeAnswer[1].getAttribute('data-initial-value') + '\n';
+                continue;
+            }
+
         }
 
         callback({ formData: answerSum });
