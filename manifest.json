@@ -2,7 +2,7 @@
     "name": "GFShare",
     "version": "1.0.0",
     "manifest_version": 2,
-    "description": "You can share your answer in Google Forms before send.",
+    "description": "You can share your response on Google Forms before you submit it.",
     "permissions": [
         "tabs",
         "declarativeContent",
