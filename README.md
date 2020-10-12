@@ -10,7 +10,8 @@ page action（特定のページのみで起動）の拡張機能です。
 * background.jsで特定ページになっているか確認
 * popup.html popup.js アイコンクリック時に起動  
 content.jsを呼び出し、結果を受け取りhtmlで表示
-* content.js スクレイピングをする  
+* content.js スクレイピングをする
+* imagesフォルダ アイコンを格納。16, 19, 48, 128ピクセルの４種類。19ピクセルのはpage_action用で、それ以外はデフォルトのアイコンとして設定  
 
 ## 参考文献
 * エラー(Unchecked runtime.lastError: The message port closed before a response was received.）に対応。onMessage(受け取る側）callback() or sendResponse();を書かないと出る。 https://qiita.com/noenture/items/3978f638f2ffb8ff0995
@@ -24,6 +25,7 @@ content.jsを呼び出し、結果を受け取りhtmlで表示
 * jsで属性の取得　https://itsakura.com/js-getattribute
 * document.querySelector タグとその特定の属性を取得 https://developer.mozilla.org/ja/docs/Web/API/Document/querySelector
 * js ループを一回スキップはcontinue https://www.javadrive.jp/javascript/for/index10.html
+* js 難読化サイト。popup.jsは難読化すると動かなかった。 https://obfuscator.io/
 
 ## その他メモ
 "http://*/*", "<all_urls>", "activeTab"
