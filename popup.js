@@ -25,8 +25,13 @@ function waitPageLoad(callback) {
 
 waitPageLoad((currentTab) => {
     chrome.tabs.sendMessage(currentTab.id, 'content.jsへmsg', (respnse) => {
-        document.getElementById('answer').value = respnse.formData;
-        document.getElementById('answer').select();
+        var answer = document.getElementById('answer');
+        if(!respnse){
+             answer = 'Please reload the page!';
+             return;
+        }
+        answer.value = respnse.formData;
+        answer.select();
         document.execCommand("copy");
 
         document.getElementById('successMessage').innerHTML = 'copied &#10004;'
