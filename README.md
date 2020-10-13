@@ -25,9 +25,17 @@ content.jsを呼び出し、結果を受け取りhtmlで表示
 * jsで属性の取得　https://itsakura.com/js-getattribute
 * document.querySelector タグとその特定の属性を取得 https://developer.mozilla.org/ja/docs/Web/API/Document/querySelector
 * js ループを一回スキップはcontinue https://www.javadrive.jp/javascript/for/index10.html
-* js 難読化サイト。popup.jsは難読化すると動かなかった。 https://obfuscator.io/
+* js 難読化サイト。~~popup.jsは難読化すると動かなかった。~~　難読化すると審査に落ちます（泣） https://obfuscator.io/
 
 ## その他メモ
+* 難読化すると審査に落ちる
+>コンテンツ ポリシー
+>コードの読みやすさの要件:
+>デベロッパーは、拡張機能のコードの難読化や機能の隠蔽を行ってはなりません。これは、拡張機能パッケージによって取得されるすべての外部コードまたは外部リソースにも適用されます。次の方法を含む軽量化は許可されます。
+>空白文字、改行、コードコメント、ブロック区切り文字の削除
+>変数名と関数名の短縮
+>複数のファイルの結合
+
 "http://*/*", "<all_urls>", "activeTab"
 
  "https://docs.google.com/forms/*/viewform"
