@@ -87,12 +87,12 @@
                     continue;
                 }
 
-                // //記述式(url)の問題の回答取得
-                // var inputUrlAnswer = questions[i].querySelector("input[type='url']");
-                // if (inputUrlAnswer != null) {
-                //     answerSum += inputUrlAnswer.value + '\n';
-                //     continue;
-                // }
+                //記述式(url)の問題の回答取得
+                var inputUrlAnswer = questions[i].querySelector("input[type='url']");
+                if (inputUrlAnswer != null) {
+                    answerSum += inputUrlAnswer.value + '\n';
+                    continue;
+                }
 
                 //段落の問題の回答取得
                 var textareaAnswer = questions[i].querySelector('textarea');
