@@ -6,13 +6,13 @@
 (function () {
     'use strict'
 
-    console.log('onMessage ready');
+    // console.log('onMessage ready');
 
     chrome.runtime.onMessage.addListener(
 
         function (message, sender, callback) {
 
-            console.log('onMessage!');
+            // console.log('onMessage!');
 
             //callbackデータ格納変数
             var answerSum = '';
@@ -27,8 +27,11 @@
             for (var i = 0; i < questions.length; i++) {
 
                 //問題タイトル取得
-                var questionTitle = questions[i].querySelector('.freebirdFormviewerComponentsQuestionBaseTitle').innerText;
-                answerSum += '--------------------\n' + questionTitle + '\n';
+                var questionTitle = questions[i].querySelector('.freebirdFormviewerComponentsQuestionBaseTitle');
+                if(questionTitle!=null){
+                    questionTitle = questionTitle.innerText;
+                    answerSum += '--------------------\n' + questionTitle + '\n';
+                } 
 
                 //選択式問題の複数の選択肢の取得
                 var answers = questions[i].querySelectorAll('.appsMaterialWizToggleRadiogroupEl, .exportToggleEl');
@@ -83,6 +86,14 @@
                     answerSum += inputAnswer.value + '\n';
                     continue;
                 }
+
+                // //記述式(url)の問題の回答取得
+                // var inputUrlAnswer = questions[i].querySelector("input[type='url']");
+                // if (inputUrlAnswer != null) {
+                //     answerSum += inputUrlAnswer.value + '\n';
+                //     continue;
+                // }
+
                 //段落の問題の回答取得
                 var textareaAnswer = questions[i].querySelector('textarea');
                 if (textareaAnswer != null) {
@@ -97,9 +108,10 @@
                     continue;
                 }
 
+
                 //時間の問題
-                var timeAnswer = questions[i].querySelectorAll(".quantumWizTextinputPaperinputInput");
-                if (timeAnswer != 0) {
+                var timeAnswer = questions[i].querySelectorAll("input[type='number']");
+                if (timeAnswer.length != 0) {
                     answerSum += timeAnswer[0].getAttribute('data-initial-value') + ':' + timeAnswer[1].getAttribute('data-initial-value') + '\n';
                     continue;
                 }
