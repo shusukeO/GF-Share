@@ -14,7 +14,7 @@
         "https://docs.google.com/"
     ],
     "content_scripts": [{
-        "matches": ["https://docs.google.com/forms/*/viewform"],
+        "matches": ["https://docs.google.com/forms/*/*"],
         "js": [
           "content.js"
         ]
