@@ -26,6 +26,7 @@ content.jsを呼び出し、結果を受け取りhtmlで表示
 * document.querySelector タグとその特定の属性を取得 https://developer.mozilla.org/ja/docs/Web/API/Document/querySelector
 * js ループを一回スキップはcontinue https://www.javadrive.jp/javascript/for/index10.html
 * js 難読化サイト。~~popup.jsは難読化すると動かなかった。~~　難読化すると審査に落ちます（泣） https://obfuscator.io/
+* js 圧縮 google製 これなら審査に通る https://closure-compiler.appspot.com/home
 
 ## その他メモ
 * 難読化すると審査に落ちる
@@ -35,6 +36,8 @@ content.jsを呼び出し、結果を受け取りhtmlで表示
 >空白文字、改行、コードコメント、ブロック区切り文字の削除
 >変数名と関数名の短縮
 >複数のファイルの結合
+* .lengthつけるの忘れがち
+* contetscriptがうまく動かなかったらmanifestのmatchesを疑え。urlのパラメータまで指定すると、reloadしないとcontentscriptが読み込まれないことがある。
 
 "http://*/*", "<all_urls>", "activeTab"
 
