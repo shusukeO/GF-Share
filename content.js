@@ -93,6 +93,13 @@
                     answerSum += inputUrlAnswer.value + '\n';
                     continue;
                 }
+                
+                //記述式(email)の問題の回答取得
+                var inputEmailAnswer = questions[i].querySelector("input[type='email']");
+                if (inputEmailAnswer != null) {
+                    answerSum += inputEmailAnswer.value + '\n';
+                    continue;
+                }
 
                 //段落の問題の回答取得
                 var textareaAnswer = questions[i].querySelector('textarea');
