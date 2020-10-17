@@ -3,7 +3,9 @@ Google Forms の自分の現時点での回答を送信前に即座にシェア�
 You can share your answer in Google Forms before send.  
 page action（特定のページのみで起動）の拡張機能です。
 
-![スクリーンショット 2020-10-12 11 16 29](https://user-images.githubusercontent.com/56382189/95698274-667edc00-0c7c-11eb-977c-0d0d2480a156.png)
+![Quick Share for Goolge Forms 001](https://user-images.githubusercontent.com/56382189/96325099-15962b80-1060-11eb-9019-502ea8700606.png)
+![Quick Share for Goolge Forms 002](https://user-images.githubusercontent.com/56382189/96325111-2a72bf00-1060-11eb-8b33-cbe897f5782b.png)
+
 
 ## ファイル構成
 * manifest パーミッションとか
