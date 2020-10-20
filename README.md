@@ -15,6 +15,9 @@ content.jsを呼び出し、結果を受け取りhtmlで表示
 * content.js スクレイピングをする
 * imagesフォルダ アイコンを格納。16, 19, 48, 128ピクセルの４種類。19ピクセルのはpage_action用で、それ以外はデフォルトのアイコンとして設定  
 
+## 配布先
+https://chrome.google.com/webstore/detail/quick-share-for-google-fo/lmedceklaehcenmffndoacnehhdocnhk
+
 ## 参考文献
 * エラー(Unchecked runtime.lastError: The message port closed before a response was received.）に対応。onMessage(受け取る側）callback() or sendResponse();を書かないと出る。 https://qiita.com/noenture/items/3978f638f2ffb8ff0995
 * エラー（Could not establish connection. Receiving end does not exist.）に対応。ページのローディングを待ってからMessage apiをたたく。onMessage(受け取る側）でreturnを書いても出る。https://www.itoukun.com/2019/11/09/chrome-extension-%E3%81%AE-unchecked-lasterror-value-error-could-not-establish-connection-receiving-end-does-not-exist-%E3%81%AE%E5%AF%BE%E5%87%A6%E6%B3%95/
