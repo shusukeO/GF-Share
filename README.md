@@ -1,4 +1,4 @@
-# Quick Share for Google Forms
+# GF Share
 Google Forms の自分の現時点での回答を送信前に即座にシェアできるchrome拡張機能です。  
 You can share your answer in Google Forms before send.  
 page action（特定のページのみで起動）の拡張機能です。
